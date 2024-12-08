@@ -126,7 +126,7 @@ nav {
 }
 
 .header__container::before {
-  content: "SPORTS";
+  content: "FITNESS";
   position: absolute;
   bottom: 5rem;
   right: 20rem;
@@ -330,42 +330,6 @@ nav {
   gap: 2rem;
   background-color: var(--primary-color-light);
   border-radius: 10px;
-}
-
-@media (max-width: 768px) {
-  body {
-      font-size: 14px; /* تصغير حجم النص قليلاً للأجهزة الصغيرة */
-      line-height: 1.4; /* تحسين تباعد السطور */
-      padding: 5px; /* تقليل الحواف لتناسب الشاشة */
-  }
-
-  h1 {
-      font-size: 24px; /* حجم مناسب للعناوين الرئيسية */
-  }
-  h2 {
-      font-size: 20px; /* حجم مناسب للعناوين الفرعية */
-  }
-  p {
-      font-size: 14px; /* تصغير النصوص قليلاً لتناسب الشاشات الصغيرة */
-  }
-}
-
-/* تحسين النصوص لشاشات أصغر (مثل الهواتف الصغيرة جدًا) */
-@media (max-width: 480px) {
-  body {
-      font-size: 12px; /* تقليل حجم النصوص أكثر */
-      line-height: 1.2; /* تقليل تباعد السطور */
-  }
-
-  h1 {
-      font-size: 20px; /* حجم صغير للعناوين */
-  }
-  h2 {
-      font-size: 18px; /* تقليل حجم العناوين الفرعية */
-  }
-  p {
-      font-size: 12px; /* النصوص صغيرة ولكن واضحة */
-  }
 }
 
 .join__card {
@@ -624,34 +588,6 @@ nav {
   text-align: center;
 }
 
-.footer__logo {
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-body {
-  font-family: Arial, sans-serif; /* استبدلها بخطوطك المفضلة */
-  line-height: 1.6; /* يجعل النصوص مريحة للقراءة */
-  text-align: justify; /* محاذاة النصوص إلى كلا الجانبين */
-  color: #fff; /* لون النص */
-  background-color: #2a2a2a; /* خلفية داكنة مثل الأزرق */
-}
-
-/* تنسيق العناوين */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif; /* خط حديث للعناوين */
-  color: #ffffff; /* لون العناوين */
-  text-align: left; /* محاذاة للعناوين */
-  margin: 10px 0;
-}
-
-/* تنسيق الفقرات */
-p {
-  font-size: 16px; /* حجم النص */
-  color: #ffffff; /* لون النص */
-  margin: 10px 0;
-
 @media (width < 900px) {
   .nav__links {
     display: none;
@@ -669,6 +605,22 @@ p {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
+
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer__logo {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
 
   .class__container {
     grid-template-columns: repeat(1, 1fr);
